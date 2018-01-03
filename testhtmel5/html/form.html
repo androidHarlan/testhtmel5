@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!--
+        	作者：linhuachon@163.com
+        	时间：2018-01-03
+        	描述：action行为，把数据提交行为method提交方式target="_blank"会跳转另一个窗口
+        -->
+		<form action="http://www.baidu.com" id="register" method="get" name="reg" target="_blank" autocomplete="on">
+			<!--
+            	作者：linhuachon@163.com
+            	时间：2018-01-03
+            	描述：autofocus光标自动获取焦点disabled是禁用不能输入autocomplete输入提示name定义input元素的名称，以便接收到对应的值
+            -->
+			用户名：<input name="user" autofocus="autofocus" autocomplete="on"/>
+			<button>提交</button>
+			
+		<button type="button" >按钮</button>
+	
+		<button type="reset">重置</button>
+		<!--
+        	作者：linhuachon@163.com
+        	时间：2018-01-03
+        	描述：formaction会把form里的action重置了
+        -->
+		<button type="submit" formaction="http://www.sougou.com">提交</button>
+		</form>
+		<!--
+        	作者：linhuachon@163.com
+        	时间：2018-01-03
+        	描述：form用法：因为这个输入框不在上面的form里如果不加form就无法提交email，form里的名称和上面的id一致
+        -->
+		电子邮箱:<input name="email" form="register"/>
+		<br />
+		<!--
+        	作者：linhuachon@163.com
+        	时间：2018-01-03
+        	描述：label点击用户名也可以输入
+        -->
+		<label>
+			用户名：<input name="user" autofocus="autofocus" autocomplete="on"/>
+		</label>
+		<label for="user">
+			用户名：
+		</label>
+		<input id="user" name="user" autofocus="autofocus" autocomplete="on"/>
+		<br/>
+		<!--
+        	作者：linhuachon@163.com
+        	时间：2018-01-03
+        	描述：fieldset分组
+        -->
+		<fieldset>
+		<label>
+			用户名：<input name="user" autofocus="autofocus" autocomplete="on"/>
+		</label>
+		<label for="user">
+			用户名：
+		</label>
+		<input id="user" name="user" autofocus="autofocus" autocomplete="on"/>
+		
+		</fieldset>
+		
+	</body>
+</html>
