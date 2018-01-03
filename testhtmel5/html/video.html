@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<!--
+        	作者：linhuachon@163.com
+        	时间：2018-01-03
+        	描述：controls 表示显示播放控件autoplay自动播放视频loop表示反复播放视频muted设置后表示视频处于静音状态preload 设置后表示预先载入视频 poster指定视频数据载入时显示的图片
+        -->
+		<!--		<video src="../video/妖铃铃_hd.mp4" width="800" height="500" controls="controls" autoplay="autoplay" loop="loop" muted="muted"></video>
+-->
+		<!-- <video src="../video/妖铃铃_hd.mp4" width="800" height="500" controls="controls" preload="none"></video>-->
+		<video width="800" height="400">
+			<!--
+    	作者：linhuachon@163.com 时间：2018-01-03 描述：这样source写可以支持多个浏览器
+    -->
+			<source src="../video/妖铃铃_hd.mp4"></source>
+			<!--<source src="../video/妖铃铃_hd.webM"></source>-->
+		</video>
+		<audio controls="controls">
+			<source src="../video/妖铃铃_hd.mp4"></source>
+		</audio>
+	</body>
+
+</html>
