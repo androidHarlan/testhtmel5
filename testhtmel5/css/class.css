@@ -1,0 +1,58 @@
+@charset "utf-8";
+/**{
+	border: 1px solid red;
+}*/
+/*p{
+	color: red;
+}*/
+/*#abc{
+	color: red;
+}
+*/
+/*.abc{
+	color: red;
+}
+*/
+/*.def{
+	color: red;
+	font-size: 30px;
+}*/
+[href]{
+	color: red;
+}
+/*password跟input一致*/
+[type="password"]{
+	border: solid red;
+}
+/*表示超链接含有http的设置*/
+[href^="http"]{
+	color: #0000FF;
+}
+/*表示超链接尾端含有cn的设置*/
+[href$="cn"]{
+	color: #0000FF;
+}
+/*表示超链接含有cn的设置*/
+[href*="cn"]{
+	color: #0000FF;
+	font-size: 30px;
+}
+[class~="def"]{
+	font-size: 30px;
+}
+/*复合选择器*/
+p,b{
+	border: solid;
+}
+/*首行*/
+::first-line{
+	color: red;
+}
+/*首行首字母*/
+::first-letter{
+	color: #0000FF;
+}
+/*插入前面之后*/
+p::after{
+	content: '点击';
+}
