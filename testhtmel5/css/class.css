@@ -17,13 +17,13 @@
 	color: red;
 	font-size: 30px;
 }*/
-[href]{
+/*[href]{
 	color: red;
-}
+}*/
 /*password跟input一致*/
-[type="password"]{
+/*[type="password"]{
 	border: solid red;
-}
+}*/
 /*表示超链接含有http的设置*/
 [href^="http"]{
 	color: #0000FF;
@@ -41,18 +41,96 @@
 	font-size: 30px;
 }
 /*复合选择器*/
-p,b{
+/*p,b{
 	border: solid;
-}
+}*/
 /*首行*/
-::first-line{
+/*::first-line{
+	color: red;
+}*/
+/*首行首字母*/
+/*::first-letter{
+	color: #0000FF;
+}*/
+/*p插入前面之后*/
+/*p::after{
+	content: '点击';
+}*/
+/*p根选择器*/
+/*:root{
+	color: #FF0000;
+}
+*/
+/*子元素选择器*/
+/*ul>li{
+	color: red;
+}*/
+/*子元素选择器*/
+/*ul>li:first-child{
+	color: blue;
+}
+*/
+/*伪类都需要加上前置选择器：来限制范围*/
+
+
+/*选择只有一个指定类型的子元素的子元素*/
+/*div > p:only-of-type{
+	color: #0000FF;
+}*/
+/*子元素选择器第2个*/
+/*ul>li:nth-child(2){
 	color: red;
 }
-/*首行首字母*/
-::first-letter{
-	color: #0000FF;
+*/
+ul>li:nth-last-child(1){
+	color: red;
 }
-/*插入前面之后*/
-p::after{
-	content: '点击';
+/*选择特定子元素的倒数第一个*/
+div>p:nth-last-of-type(1){
+	color: red;
 }
+/*启用*/
+:enabled{
+	border:1px solid red;
+}
+/*禁用*/
+:disabled{
+	border: black;
+}
+/*选择中*/
+input:checked{
+	display: none;
+}
+/*合法*/
+input:valid{
+	border: 1px solid green;
+}
+/*不合法*/
+input:invalidv{
+	border: 1px solid red;
+}
+/*不必要填写*/
+input:optional{
+	border: 1px solid green;
+}
+/*未访问的，就是未点击*/
+a:link{
+	color: red;
+}
+/*访问过*/
+a:visited{
+	color: burlywood;
+}
+/*鼠标悬停时*/
+a:hover{
+	color: black;
+}
+/*激活时*/
+a:active{
+	color: blueviolet;
+}
+/*为空时*/
+:empty{
+	display: none;
+}
+
