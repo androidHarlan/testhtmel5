@@ -1,0 +1,12 @@
+@charset "utf-8";
+p{
+	
+	/*color: rgb(0,255,0);*/
+	/*百分比*/
+	color: rgba(0,255,0,0.5);
+	background: gray;
+	margin: 50px;
+	padding: 8px;
+	height: 8em;
+	width: 50%;
+}
