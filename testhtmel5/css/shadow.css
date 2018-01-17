@@ -1,0 +1,17 @@
+@charset "utf-8";
+p{
+	text-shadow: 5px 5px 8px black;
+	font-size: 30px;
+	/*text-align: center;*/
+	/*两端对齐*/
+		text-align: justify;
+		/*white-space: pre;*/
+		/*设置子与字之间距离*/
+	/*	letter-spacing: 5px;*/
+	/*设置行之间距离*/
+	line-height: 1;
+	
+}
+img{
+	
+}
