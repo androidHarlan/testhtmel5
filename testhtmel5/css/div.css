@@ -1,0 +1,19 @@
+@charset "utf-8";
+div{
+	background: red;
+	width: 100px;
+	height: 100px;
+	
+	/*刚好包含文本大小*/
+/*display:inline*/
+	/*width: auto;
+	height: 20px;*/
+	/*min-height: 200px;
+	min-width: 200px;*/
+	/*padding: 20px 30px 40px 50px;*/
+	/*文本溢出问题*/
+	overflow-y: auto;
+}
+body{
+	/*background: silver;*/
+}
