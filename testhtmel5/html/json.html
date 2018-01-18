@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>  
+
+<html>  
+
+<head>  
+
+    <title>Window.JSON</title>  
+
+<meta charset="UTF-8">
+
+</head>  
+
+  
+
+<body>  
+
+    <button type="button" id="btn1">解析json字符串</button>  
+
+    <button type="button" id="btn2">json对象转换为json字符串</button>  
+
+    <div id="res">  
+
+      
+
+    </div>  
+
+    <script language="JavaScript">  
+
+    <!--  
+
+        var jsonStr = "{\"total\":100,\"date\":[{\"id\":10001,\"name\":\"scott\"},{\"id\":10002,\"name\":\"tiger\"}]}";  
+
+        var jsonObj = window.JSON.parse(jsonStr);  
+
+          
+
+        document.getElementById("btn1").onclick = function() {  
+
+            var str = "json字符串解析为json对象<br>";  
+
+            str += "<span>Total:"+jsonObj.total+"</span><br><span>Data:";  
+
+            for (var i=0;i<jsonObj.date.length ; i++)  
+
+            {  
+
+                str += "id:" + jsonObj.date[i].id + ",name:" + jsonObj.date[i].name+"<br>";  
+
+            }  
+
+            str += "</span><br>";  
+
+            document.querySelector("#res").innerHTML = str;  
+
+  
+
+        }  
+
+        document.getElementById("btn2").onclick = function() {  
+
+            var jsonObj = {total:100,data:[{id:10001,name:"scott"},{id:10002,name:"tiger"}]};  
+
+            var jsonStr = window.JSON.stringify(jsonObj);  
+
+            var str = "转为json字符串：<br>" + jsonStr;  
+
+            document.querySelector("#res").innerHTML = str;  
+
+        }  
+
+    //-->  
+
+    </script>  
+
+</body>  
+
+</html> 

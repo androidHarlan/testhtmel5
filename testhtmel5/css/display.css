@@ -1,0 +1,45 @@
+@charset "utf-8";
+/*这样设置宽高没什么用*/
+/*span{
+	background: silver;
+	width: 400px;
+	height: 200px;
+}*/
+/*span{
+	background: silver;
+	width: 400px;
+	height: 200px;
+	/*添加这个属性把它变成块的结构可以设置宽高*/
+	/*display: block;
+*//*}*/
+/*div{
+	background: silver;
+	widows: 200px;
+	height: 200px;
+	/*添加这个属性把它变成行的结构*/
+	/*display: inline;*/
+/*}
+*/
+/*div,span{
+	background: silver;
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+}*/
+#a{
+	background: saddlebrown;
+	
+}
+#b{
+	background: #66000000;
+	float: right;
+}
+#c{
+	float: left;
+	background: #FFA500;
+	
+}
+div{
+	width: 200px;
+	height: 200px;
+}
