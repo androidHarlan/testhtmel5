@@ -13,5 +13,15 @@
 				div.style.backgroundColor=div.style.backgroundColor=='red'?'green':(div.style.backgroundColor=='green'?'blue':'red');
 			}
 		</script>
+		<p id="test">
+			测试js点击修改
+		</p>
+		<script>
+			function myfunction(){
+				x=document.getElementById("test");
+				x.innerHTML="我改变了文本";
+			}
+		</script>
+		<button type="button" onclick="myfunction()">点击</button>
 	</body>
 </html>
